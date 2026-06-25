@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para papá — Recuerdos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pagina-recuerdos">
+
+  <!-- Botón menú móvil -->
+  <button class="btn-menu-movil" onclick="toggleSidebar()">☰ Menú</button>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-emoji">🎂</div>
+      <h2>Feliz cumpleaños,<br><span>papá</span></h2>
+    </div>
+    <nav class="sidebar-nav">
+      <button class="nav-item" onclick="mostrarSeccion('Yaya', this)">🌸 Yaya</button>
+      <button class="nav-item" onclick="mostrarSeccion('Yayo', this)">👴🏼 Yayo</button>
+      <button class="nav-item" onclick="mostrarSeccion('Maria', this)">🩷 María</button>
+      <button class="nav-item" onclick="mostrarSeccion('Adrian', this)">💛 Adrián</button>
+      <button class="nav-item" onclick="mostrarSeccion('Lucia', this)">💜 Lucía</button>
+      <button class="nav-item" onclick="mostrarSeccion('Pedri', this)">⚽ Pedri</button>
+      <button class="nav-item" onclick="mostrarSeccion('Yayi', this)">🌼 Yayi</button>
+      <button class="nav-item" onclick="mostrarSeccion('Oliver', this)">🙆🏻‍♂️ Oliver</button>
+      <button class="nav-item" onclick="mostrarSeccion('Jose', this)">💭 ¿Yo?</button>
+    </nav>
+  </aside>
+
+  <!-- Overlay móvil -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+
+    <!-- PANTALLA DE BIENVENIDA (nueva, va antes de todas las secciones) -->
+    <section class="seccion" id="seccion-bienvenida">
+    <div class="bienvenida-contenedor">
+        <div class="bienvenida-emoji">🎂</div>
+        <h1 class="bienvenida-titulo">¡Feliz cumpleaños, Jose!</h1>
+        <p class="bienvenida-texto">
+        Cada persona de tu vida tiene algo que contarte.<br>
+        Elige un nombre en el menú y descubre su mensaje. 💛
+        </p>
+        <div class="bienvenida-flecha">← Elige un nombre</div>
+    </div>
+    </section>
+
+    <!-- ADRIÁN -->
+    <section class="seccion oculto" id="seccion-Adrian">
+      <div class="seccion-header">
+        <span class="seccion-emoji">💛</span>
+        <h1>Adrián</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para papá...
+      </p>
+        <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="fotos/adrian/adrian1.jpeg" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="fotos/adrian/adrian2.jpeg" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="fotos/adrian/adrian3.jpeg" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="fotos/adrian/adrian4.jpeg" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="fotos/adrian/adrian5.jpeg" alt="Foto 5" />
+            </div>
+        </div>
+
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="fotos/adrian/adrian1.jpeg" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="fotos/adrian/adrian2.jpeg" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="fotos/adrian/adrian3.jpeg" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="fotos/adrian/adrian4.jpeg" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="fotos/adrian/adrian5.jpeg" alt="Foto 5" /></div>
+        </div>
+        
+    </section>
+
+    <!-- LUCÍA -->
+    <section class="seccion oculto" id="seccion-Lucia">
+      <div class="seccion-header">
+        <span class="seccion-emoji">💜</span>
+        <h1>Lucía</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para papá...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="fotos/lucia/lucia1.jpeg" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="fotos/lucia/lucia2.jpeg" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="fotos/lucia/lucia3.jpeg" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:0px;transform:rotate(3deg);z-index:3;">
+                <img src="fotos/lucia/lucia4.jpeg" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:200px;transform:rotate(-2deg);z-index:2;">
+                <img src="fotos/lucia/lucia5.jpeg" alt="Foto 5" />
+            </div>
+            
+            <div class="collage-foto" style="width:230px;height:200px;top:180px;left:400px;transform:rotate(2deg);z-index:3;">
+                <img src="fotos/lucia/lucia6.jpeg" alt="Foto 6" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="fotos/lucia/lucia1.jpeg" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="fotos/lucia/lucia2.jpeg" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="fotos/lucia/lucia3.jpeg" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="fotos/lucia/lucia4.jpeg" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="fotos/lucia/lucia5.jpeg" alt="Foto 5" /></div>
+            <div class="muro-foto"><img src="fotos/lucia/lucia6.jpeg" alt="Foto 6" /></div>
+
+        </div>
+    </section>
+
+    <!-- MARÍA -->
+    <section class="seccion oculto" id="seccion-Maria">
+      <div class="seccion-header">
+        <span class="seccion-emoji">🩷</span>
+        <h1>María</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para papá...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:0px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:200px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+            <div class="collage-foto" style="width:230px;height:200px;top:180px;left:400px;transform:rotate(2deg);z-index:3;">
+                <img src="foto" alt="Foto 6" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 6" /></div>
+        </div>
+    </section>
+
+    <!-- YAYA -->
+    <section class="seccion oculto" id="seccion-Yaya">
+      <div class="seccion-header">
+        <span class="seccion-emoji">🌸</span>
+        <h1>Yaya</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para jose...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+    <!-- YAYO -->
+    <section class="seccion oculto" id="seccion-Yayo">
+      <div class="seccion-header">
+        <span class="seccion-emoji">👴🏼</span>
+        <h1>Yayo</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para jose...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+    <!-- YAYI -->
+    <section class="seccion oculto" id="seccion-Yayi">
+      <div class="seccion-header">
+        <span class="seccion-emoji">🌼</span>
+        <h1>Yayi</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para jose...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+    <!-- PEDRI -->
+    <section class="seccion oculto" id="seccion-Pedri">
+      <div class="seccion-header">
+        <span class="seccion-emoji">⚽</span>
+        <h1>Pedri</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para jose...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+    <!-- OLIVER -->
+    <section class="seccion oculto" id="seccion-Oliver">
+      <div class="seccion-header">
+        <span class="seccion-emoji">🙆🏻‍♂️</span>
+        <h1>Oliver</h1>
+      </div>
+      <p class="mensaje">
+        Escribe aquí tu mensaje para jose...
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+    <!--JOSE-->
+    <section class="seccion oculto" id="seccion-Jose">
+      <div class="seccion-header">
+        <span class="seccion-emoji">💭</span>
+        <h1>¿Yo?</h1>
+      </div>
+      <p class="mensaje">
+        Este apartado es un poco... diferente.
+        Se trata de un pequeño recorrido por los eventos mas importantes de tu vida hasta ahora.
+      </p>
+      <div class="collage-zona">
+            <div class="collage-foto" style="width:240px;height:180px;top:0px;left:0px;transform:rotate(-3deg);z-index:1;">
+                <img src="foto" alt="Foto 1" />
+            </div>
+            <div class="collage-foto" style="width:200px;height:200px;top:10px;left:200px;transform:rotate(2deg);z-index:2;">
+                <img src="foto" alt="Foto 2" />
+            </div>
+            <div class="collage-foto" style="width:220px;height:160px;top:15px;left:370px;transform:rotate(-1deg);z-index:1;">
+                <img src="foto" alt="Foto 3" />
+            </div>
+            <div class="collage-foto" style="width:190px;height:190px;top:190px;left:60px;transform:rotate(3deg);z-index:3;">
+                <img src="foto" alt="Foto 4" />
+            </div>
+            <div class="collage-foto" style="width:210px;height:160px;top:185px;left:310px;transform:rotate(-2deg);z-index:2;">
+                <img src="foto" alt="Foto 5" />
+            </div>
+        </div>
+        <div class="muro-zona">
+            <div class="muro-foto"><img src="foto" alt="Foto 1" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 2" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 3" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 4" /></div>
+            <div class="muro-foto"><img src="foto" alt="Foto 5" /></div>
+        </div>
+    </section>
+
+  </main>
+
+  <script>
+    function mostrarSeccion(nombre, btn) {
+      document.querySelectorAll('.seccion').forEach(s => s.classList.add('oculto'));
+      document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('activo'));
+      document.getElementById('seccion-' + nombre).classList.remove('oculto');
+      btn.classList.add('activo');
+      // Cerrar sidebar en móvil al seleccionar
+      if (window.innerWidth < 768) toggleSidebar();
+    }
+
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('abierto');
+      document.getElementById('overlay').classList.toggle('visible');
+    }
+  </script>
+
+</body>
+</html>

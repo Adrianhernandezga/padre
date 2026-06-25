@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para papá</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pagina-acceso">
+
+  <div class="contenedor-acceso">
+    <div class="emoji-bienvenida">🎂</div>
+    <h1>Bienvenido</h1>
+    <p class="subtitulo"><br>¿Cómo te llamas?</p>
+
+    <div class="campo">
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Escribe tu nombre..."
+        autocomplete="off"
+      />
+    </div>
+
+    <button id="btn-entrar" onclick="verificarNombre()">Entrar</button>
+
+    <p class="error oculto" id="mensaje-error">
+      ❌ Esta página no es para ti... 😄
+    </p>
+  </div>
+
+  <script>
+    function verificarNombre() {
+      const input = document.getElementById('nombre').value.trim().toLowerCase();
+      const nombreValido = ['jose luis', 'joseluis', 'jose', 'papá', 'papa', 'gafas'];
+
+      if (nombreValido.includes(input)) {
+        window.location.href = 'recuerdos.html';
+      } else {
+        const error = document.getElementById('mensaje-error');
+        error.classList.remove('oculto');
+        document.getElementById('nombre').classList.add('input-error');
+      }
+    }
+
+    document.getElementById('nombre').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') verificarNombre();
+    });
+
+    document.getElementById('nombre').addEventListener('input', function () {
+      document.getElementById('mensaje-error').classList.add('oculto');
+      this.classList.remove('input-error');
+    });
+  </script>
+
+</body>
+</html>
